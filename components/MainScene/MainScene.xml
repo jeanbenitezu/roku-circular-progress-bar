@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component name="MainScene" extends="Scene">
+  <children>
+
+    <CircularProgressBar id="circularProgressBar" translation="[100,100]" />
+
+    <Animation id="animation" duration="10">
+      <FloatFieldInterpolator
+        id="interp"
+        key="[0.0, 1.0]"
+        keyValue="[0.0, 1.0]"
+        fieldToInterp="circularProgressBar.progress" />
+    </Animation>
+
+  </children>
+  <script type="text/brightscript" uri="./MainScene.brs" />
+</component>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component name="CircularProgressBar" extends="Group">
+  <interface>
+    <field id="progress" type="float" onChange="onProgressChange" value="0" alwaysNotify="true" />
+  </interface>
+  <children>
+
+    <Group clippingRect="[0,0,255,510]">
+      <Poster
+        id="left"
+        uri="pkg:/images/fullsemicircle.png"
+        width="510"
+        height="510"
+        loadWidth="510"
+        loadHeight="510"
+        scaleRotateCenter="[255, 255]" />
+    </Group>
+
+    <Group clippingRect="[255,0,255,510]">
+      <!-- witdh="507" is a workaround to fix a weird pixel -->
+      <Poster
+        id="right"
+        uri="pkg:/images/fullsemicircle.png"
+        width="507"
+        height="510"
+        loadWidth="510"
+        loadHeight="510"
+        scaleRotateCenter="[255, 255]" />
+    </Group>
+
+  </children>
+  <script type="text/brightscript" uri="./CircularProgressBar.brs" />
+</component>
